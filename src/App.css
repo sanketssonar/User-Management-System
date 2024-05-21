@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Navbar */
+.navbar {
+  height: 60px; /* Set the height of the navbar */
+  background-color: #343a40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-management-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-user-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-user-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* User Form Modal */
+.modal-header {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-title {
+  margin: 0;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-body input {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-edit {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.edit-buttons button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-buttons button:hover {
+  background-color: #f0f0f0;
 }
